@@ -1,0 +1,50 @@
+.main {
+
+}
+
+.main__outer-wrapper {
+    
+    @media (min-width: 768px) {
+        display: grid;
+        align-items: center;
+        grid-template-columns: min-content 1fr;
+        margin-top: 115px;
+    }
+}
+
+.main__img {
+    @media (min-width: 768px) {
+        order: 1;
+    }
+}
+
+.main__title {
+    font-size: 24px;
+    font-weight: bold;
+
+    @media (min-width: 768px) {
+        font-size: 42px;
+        line-height: 150%;
+        width: 615px;
+    }
+}
+
+.main__description {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.main__action-btn {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    background-color: $action;
+    color: $text-white;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 5px;
+
+    @media (min-width: 768px) {
+        width: 210px;
+    }
+}
