@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авантаж - бюро переводов</title>
+    <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
@@ -143,11 +144,67 @@
                     <a href="#" class="blog__more">Все статьи</a>
             </div>
         </section>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы о работе центра языковых переводов «Авантаж»</h2>
+                <div class="reviews__wrapper">
+                    <ul class="reviews__list my-slider">
+                        <li class="reviews__item">
+                            <img src="img/review1.jpg" alt="" class="reviews__img">
+                            <p class="reviews__description">Рекомендательное письмо от ООО “ТМСК”</p>
+                        </li>
+                        <li class="reviews__item">
+                            <img src="img/review1.jpg" alt="" class="reviews__img">
+                            <p class="reviews__description">Рекомендательное письмо от ООО “ТМСК”</p>
+                        </li>
+                        <li class="reviews__item">
+                            <img src="img/review1.jpg" alt="" class="reviews__img">
+                            <p class="reviews__description">Рекомендательное письмо от ООО “ТМСК”</p>
+                        </li>
+                        <li class="reviews__item">
+                            <img src="img/review1.jpg" alt="" class="reviews__img">
+                            <p class="reviews__description">Рекомендательное письмо от ООО “ТМСК”</p>
+                        </li>
+                        <li class="reviews__item">
+                            <img src="img/review1.jpg" alt="" class="reviews__img">
+                            <p class="reviews__description">Рекомендательное письмо от ООО “ТМСК”</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
             © 2021, ООО  Компания "Авантаж". Все права защищены.
         </div>
     </footer>
+
+    <script src="js/tiny-slider.js"></script>
+
+    <script>
+        var slider = tns({
+            container: ".my-slider",
+            slideBy: "page",
+            mouseDrag: true,
+            swipeAngle: false,
+            speed: 400,
+            controls: false,
+            gutter: 37,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                768: {
+                    items: 2
+                },
+
+                1200: {
+                    items: 3
+                }
+            }
+        });
+      </script>
 </body>
 </html>
