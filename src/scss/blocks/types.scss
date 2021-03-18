@@ -8,19 +8,15 @@
 .types__list {
     list-style: none;
     display: grid;
-    gap: 30px;
-    margin-top: 30px;
-
-    @media (min-width: 550px) {
+    gap: 37px;
+    margin-top: 37px;
+    
+    @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
     }
     
-    @media (min-width: 768px) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    
     @media (min-width: 1200px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -41,23 +37,28 @@
 
 .types__title {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
     margin-top: 12px;
 }
 
 .types__days {
-    margin-top: 12px;
+    // margin-top: 12px;
 }
 
 .types__description {
     color: $text-light;
-    margin-top: 12px;
+    // margin-top: 12px;
 }
 
 .types__btn {
     display: inline-block;
     text-decoration: none;
     color: $corporate;
-    margin-top: 12px;
+    // margin-top: 12px;
 }
 
+.banner {
+    background-image: url("../img/maxresdefault.jpg");
+    background-size: cover;
+    grid-area: 3 / 2 / 4 / 4;
+}
