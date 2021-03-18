@@ -1,0 +1,67 @@
+.advantages {
+    margin-top: 75px;
+}
+
+.advantages__list {
+    margin-top: 37px;
+    list-style: none;
+    display: grid;
+    gap: 37px;
+
+    @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1140px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.advantages__item {
+    padding-top: 70px;
+    position: relative;
+
+    @media (min-width: 1200px) {
+        width: 263px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 63px;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    &--clients {
+        &::before {
+            background-image: url("../img/advantages1.svg");
+        }
+    }
+    
+    &--hours {
+        &::before {
+            background-image: url("../img/advantages2.svg");
+        }    
+    }
+    
+    &--sheets {
+        &::before {
+            background-image: url("../img/advantages3.svg");
+        }    
+    }
+    
+    &--notarial {
+        &::before {
+            background-image: url("../img/advantages4.svg");
+        }    
+    }
+}
+
+.advantages__text {
+    color: $text-light;
+}
