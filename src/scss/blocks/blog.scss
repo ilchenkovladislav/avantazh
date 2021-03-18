@@ -1,0 +1,40 @@
+.blog {
+    margin-top: 75px;
+}
+
+.blog__description {
+    margin-top: 37px;
+}
+
+.blog__read {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $corporate;
+    margin-left: auto;
+    width: 120px;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 8px;
+        height: 8px;
+
+        border-top: 1px solid $corporate;
+        border-right: 1px solid $corporate;
+        transform: rotate(45deg);
+    }
+}
+
+.blog__more {
+    display: block;
+    margin: 0 auto;
+    color: $corporate;
+    text-underline-offset: 7px;
+    width: 100px;
+    text-align: center;
+    margin-top: 37px;
+}
