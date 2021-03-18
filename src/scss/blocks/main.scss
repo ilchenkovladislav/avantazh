@@ -43,6 +43,11 @@
     width: 100%;
     margin-top: 40px;
     border-radius: 5px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: lighten($action, 10);
+    }
 
     @media (min-width: 768px) {
         width: 210px;
