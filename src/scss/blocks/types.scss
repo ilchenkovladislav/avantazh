@@ -30,6 +30,8 @@
 
 .types__img {
     width: 100%;
+    height: 241px;
+    object-fit: cover;
 }
 
 .types__title {
@@ -38,20 +40,18 @@
     margin-top: 12px;
 }
 
-.types__days {
-    // margin-top: 12px;
-}
-
 .types__description {
     color: $text-light;
-    // margin-top: 12px;
 }
 
 .types__btn {
     display: inline-block;
     text-decoration: none;
     color: $corporate;
-    // margin-top: 12px;
+
+    &:hover {
+        color: lighten($corporate, 20);
+    }
 }
 
 .banner {
