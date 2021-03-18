@@ -1,0 +1,41 @@
+.getting {
+    margin-top: 75px;
+}
+
+.getting__list {
+    margin-top: 37px;
+    list-style: none;
+    display: grid;
+    row-gap: 37px;
+    
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 37px;
+    }
+}
+
+.getting__item {
+    @media (min-width: 768px) and (max-width: 1199px) {
+        display: grid;
+        grid-template-areas: "img title"
+                             "img description";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content 1fr;
+        column-gap: 20px;
+    }
+}
+
+.getting__img {
+    width: 100%;
+    grid-area: img;
+}
+
+.getting__title {
+    grid-area: title;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.getting__description {
+    grid-area: description;
+}
