@@ -11,9 +11,10 @@
 }
 
 .reviews__img {
-    border: 20px solid #222;
+    border: 1px solid #eee;
     display: block;
     width: 100%;
+    border-radius: 5px;
 }
 
 .reviews__description {
@@ -22,5 +23,20 @@
 }
 
 .tns-nav {
-    display: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 15px;
+}
+
+.tns-nav button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+}
+
+.tns-nav-active {
+    background-color: $text-light;
 }
