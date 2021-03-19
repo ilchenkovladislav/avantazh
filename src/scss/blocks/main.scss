@@ -1,6 +1,13 @@
 .main {
     background: linear-gradient(90deg, rgba(0,0,0,.6) 0%, rgba(255,255,255,0) 100%), url("../img/main-bg.jpg");
     background-position: center;
+    background-size: cover;
+    
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: linear-gradient(90deg, rgba(0,0,0,.6) 0%, rgba(255,255,255,0) 100%), url("../img/main-bg@2x.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 .main__outer-wrapper {
