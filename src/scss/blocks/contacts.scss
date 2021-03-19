@@ -30,6 +30,10 @@
         background-position: -250px;
         height: 350px;
     }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/map@2x.jpg");
+    }
 }
 
 .contacts__info {
