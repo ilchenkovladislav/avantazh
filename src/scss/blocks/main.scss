@@ -1,0 +1,62 @@
+.main {
+    background: linear-gradient(90deg, rgba(0,0,0,.6) 0%, rgba(255,255,255,0) 100%), url("../img/main-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: linear-gradient(90deg, rgba(0,0,0,.6) 0%, rgba(255,255,255,0) 100%), url("../img/main-bg@2x.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.main__outer-wrapper {
+    color: $text-white;
+
+    padding: 80px 20px;
+    
+    @media (max-width: 767px) {
+        max-width: 388px;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
+.main__title {
+    font-size: 24px;
+    font-weight: bold;
+
+    @media (min-width: 768px) {
+        font-size: 42px;
+        line-height: 150%;
+        width: 615px;
+    }
+}
+
+.main__description {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.main__action-btn {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    background-color: $action;
+    color: $text-white;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: lighten($action, 10);
+    }
+
+    @media (min-width: 768px) {
+        width: 210px;
+    }
+}

@@ -1,0 +1,104 @@
+.steps {
+    margin-top: 75px;
+}
+
+.steps__list {
+    margin-top: 37px;
+    list-style: none;
+    display: grid;
+    row-gap: 37px;
+    
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 37px;
+    }
+}
+
+.steps__item {
+    position: relative;
+
+    &::before {
+        font-size: 100px;
+        display: block;
+        position: absolute;
+        color: lighten($text-light, 37);
+        top: 135px;
+        line-height: 1;
+    }
+
+    @media (max-width: 767px) {
+        &::before {
+            display: none;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        display: grid;
+        grid-template-areas: "img title"
+                             "img description";
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: min-content 1fr;
+        column-gap: 37px;
+
+        &::before {
+            top: 95px;
+            left: 260px;
+            width: 57px;
+            text-align: right;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        display: grid;
+        grid-template-areas: "img"
+                             "title"
+                             "description";
+        grid-template-rows: 222px min-content min-content;
+    }
+
+
+    
+    &--first {
+        &::before {
+            content: "1";
+        }
+    }
+    
+    &--second {
+        &::before {
+            content: "2";
+        }
+    }
+    
+    &--third {
+        &::before {
+            content: "3";
+        }
+    }
+}
+
+.steps__img {
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        height: 180px;
+    }
+
+    @media (min-width: 1200px) {
+        height: 100%;
+    }
+
+    grid-area: img;
+}
+
+.steps__title {
+    font-size: 16px;
+    grid-area: title;
+    margin-top: 8px;
+}
+
+.steps__description {
+    color: $text-light;
+    grid-area: description;
+}

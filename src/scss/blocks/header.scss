@@ -1,0 +1,38 @@
+.header {
+    padding: 20px 0;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 420px) {
+        display: grid;
+        justify-content: center;
+    }
+}
+
+.header__logo {
+    color: $corporate;
+    font-size: 38px;
+    display: grid;
+}
+
+.header__postscript {
+    text-align: center;
+    color: $text-logo;
+    font-size: 14px;
+}
+
+.header__phone {
+    @media (max-width: 420px) {
+        margin-top: 20px;
+    }
+}
+
+.header__tel {
+    text-decoration: none;
+    font-size: 22px;
+    color: $text-black;
+}

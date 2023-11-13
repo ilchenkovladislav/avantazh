@@ -1,0 +1,42 @@
+.reviews {
+    margin-top: 75px;
+}
+
+.reviews__wrapper {
+    margin-top: 37px;
+}
+
+.reviews__list {
+    list-style: none;
+}
+
+.reviews__img {
+    border: 1px solid #eee;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.reviews__description {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.tns-nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 15px;
+}
+
+.tns-nav button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+}
+
+.tns-nav-active {
+    background-color: $text-light;
+}
